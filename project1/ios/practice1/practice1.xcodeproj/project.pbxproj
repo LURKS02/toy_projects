@@ -17,6 +17,9 @@
 		18D722AC28FDC32F00B77973 /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D722AB28FDC32F00B77973 /* RoomListViewController.swift */; };
 		18D722AE28FEF9E800B77973 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D722AD28FEF9E800B77973 /* UserTableViewCell.swift */; };
 		18D722B028FF04AC00B77973 /* UserTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D722AF28FF04AC00B77973 /* UserTableViewHeaderFooterView.swift */; };
+		18DC2E79293E1B4800D4B1D9 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC2E78293E1B4800D4B1D9 /* UserInfoView.swift */; };
+		18DC2E7B293E1BF800D4B1D9 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC2E7A293E1BF800D4B1D9 /* Utilities.swift */; };
+		18DC2E7D293E30D500D4B1D9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC2E7C293E30D500D4B1D9 /* BaseViewController.swift */; };
 		8C0FD064D69A589243CB81AD /* Pods_practice1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145E369DB32913D4DFA34AE3 /* Pods_practice1.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +37,9 @@
 		18D722AB28FDC32F00B77973 /* RoomListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListViewController.swift; sourceTree = "<group>"; };
 		18D722AD28FEF9E800B77973 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		18D722AF28FF04AC00B77973 /* UserTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		18DC2E78293E1B4800D4B1D9 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		18DC2E7A293E1BF800D4B1D9 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		18DC2E7C293E30D500D4B1D9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		6F3D175DE20D288187B6E89E /* Pods-practice1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-practice1.debug.xcconfig"; path = "Target Support Files/Pods-practice1/Pods-practice1.debug.xcconfig"; sourceTree = "<group>"; };
 		F28D398A77A6FFA706751E60 /* Pods-practice1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-practice1.release.xcconfig"; path = "Target Support Files/Pods-practice1/Pods-practice1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +77,7 @@
 		1888840028E604EC002C622E /* practice1 */ = {
 			isa = PBXGroup;
 			children = (
+				18DC2E77293E031800D4B1D9 /* UserInfoView */,
 				1888840128E604EC002C622E /* AppDelegate.swift */,
 				1888840328E604EC002C622E /* SceneDelegate.swift */,
 				1888840728E604EC002C622E /* Main.storyboard */,
@@ -82,8 +89,18 @@
 				18D722AB28FDC32F00B77973 /* RoomListViewController.swift */,
 				18D722AD28FEF9E800B77973 /* UserTableViewCell.swift */,
 				18D722AF28FF04AC00B77973 /* UserTableViewHeaderFooterView.swift */,
+				18DC2E7A293E1BF800D4B1D9 /* Utilities.swift */,
+				18DC2E7C293E30D500D4B1D9 /* BaseViewController.swift */,
 			);
 			path = practice1;
+			sourceTree = "<group>";
+		};
+		18DC2E77293E031800D4B1D9 /* UserInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				18DC2E78293E1B4800D4B1D9 /* UserInfoView.swift */,
+			);
+			path = UserInfoView;
 			sourceTree = "<group>";
 		};
 		4F9DD51264B8F3FF46D09B62 /* Pods */ = {
@@ -221,8 +238,11 @@
 				18D722AE28FEF9E800B77973 /* UserTableViewCell.swift in Sources */,
 				1888840228E604EC002C622E /* AppDelegate.swift in Sources */,
 				1888841C28EF155A002C622E /* UserInfoViewController.swift in Sources */,
+				18DC2E79293E1B4800D4B1D9 /* UserInfoView.swift in Sources */,
 				1836788028EFF4D00056CF37 /* AddRoomViewController.swift in Sources */,
+				18DC2E7D293E30D500D4B1D9 /* BaseViewController.swift in Sources */,
 				18D722B028FF04AC00B77973 /* UserTableViewHeaderFooterView.swift in Sources */,
+				18DC2E7B293E1BF800D4B1D9 /* Utilities.swift in Sources */,
 				1888840428E604EC002C622E /* SceneDelegate.swift in Sources */,
 				18D722AC28FDC32F00B77973 /* RoomListViewController.swift in Sources */,
 			);

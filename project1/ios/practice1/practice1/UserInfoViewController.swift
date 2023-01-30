@@ -25,78 +25,11 @@ class UserInfoViewController: UIViewController {
     let tierDropDown = DropDown()
     let positionDropDown = DropDown()
     
-    
-    // MARK: - 사용자 계정 정보 입력 필드
-    private lazy var userInfoStackView: UIStackView = {
-        let view = UIStackView(arrangedSubviews: [userNameTextField, userTierDropDownButton,userPositionDropDownButton])
-        view.insertViewIntoStack(background: .black, cornerRadius: 5, borderColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), borderWidth: 2)
-        view.alignment = .center
-        view.distribution = .equalSpacing
-        view.axis = .vertical
-        view.spacing = 15
-        view.isLayoutMarginsRelativeArrangement = true
-        view.layoutMargins.top = 15
-        view.layoutMargins.bottom = 15
-        return view
-    }()
-    
-    private lazy var userNameTextField: UITextField = {
-        var tf = UITextField()
-        tf.layer.cornerRadius = 8
-        tf.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
-        //userdefault 사용
-        tf.font = .systemFont(ofSize: 18)
-        tf.attributedPlaceholder = NSAttributedString(string: userName, attributes: [.foregroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)])
-        tf.textColor = .white
-        tf.tintColor = .white
-        tf.autocapitalizationType = .none
-        tf.autocorrectionType = .no
-        tf.addTarget(self, action: #selector(textFieldEditingChanged(_:)), for: .editingChanged)
-        return tf
-    }()
-    
-    
-    private var userTierDropDownButton: UIButton = {
-        var btn = UIButton()
-        btn.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        btn.layer.cornerRadius = 8
-        btn.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 18)
-        btn.contentHorizontalAlignment = .left
-        btn.addTarget(self, action: #selector(tierDropDownButtonTapped), for: .touchUpInside)
-        return btn
-    }()
-    
-    private var userPositionDropDownButton: UIButton = {
-        var btn = UIButton()
-        btn.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        btn.layer.cornerRadius = 8
-        btn.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 18)
-        btn.contentHorizontalAlignment = .left
-        btn.addTarget(self, action: #selector(positionDropDownButtonTapped), for: .touchUpInside)
-        return btn
-    }()
-    
-    private let enterButton : UIButton = {
-        let button = UIButton()
-        button.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
-        button.layer.cornerRadius = 5
-        button.layer.borderWidth = 1
-        button.layer.borderColor = #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
-        button.setTitle("확인", for: .normal)
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-        button.setTitleColor(#colorLiteral(red: 0.7167869606, green: 0.7167869606, blue: 0.7167869606, alpha: 1), for: .normal)
-        button.isEnabled = false
-        button.addTarget(self, action: #selector(enterButtonTapped), for: .touchUpInside)
-        return button
-    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        userNameTextField.delegate = self
-        view.addSubview(userInfoStackView)
-        view.addSubview(enterButton)
+        UserInfoView.userNameTextField.delegate = self
+        view.addSubview(UserInfoView.userInfoStackView)
+        view.addSubview(UserInfoView.enterButton)
         userTierDropDownButton.setTitle(userTier, for: .normal)
         userPositionDropDownButton.setTitle(userPosition, for: .normal)
         setupAutoLayout()

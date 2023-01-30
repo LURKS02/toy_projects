@@ -45,16 +45,16 @@ class AddRoomViewController: UIViewController {
     
     
     private lazy var roomNameTextField : UITextField = {
-        let tf = UITextField()
-        tf.layer.borderColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
-        tf.layer.borderWidth = 2
-        tf.layer.cornerRadius = 8
-        tf.placeholder = " 파티 제목을 입력하세요"
-        tf.backgroundColor = .white
-        tf.autocorrectionType = .no
-        tf.autocapitalizationType = .none
-        tf.addTarget(self, action: #selector(textFieldEditingChanged(_:)), for: .editingChanged)
-        return tf
+        let $0 = UITextField()
+        $0.layer.borderColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        $0.layer.borderWidth = 2
+        $0.layer.cornerRadius = 8
+        $0.placeholder = " 파티 제목을 입력하세요"
+        $0.backgroundColor = .white
+        $0.autocorrectionType = .no
+        $0.autocapitalizationType = .none
+        $0.addTarget(self, action: #selector(textFieldEditingChanged(_:)), for: .editingChanged)
+        return $0
     }()
     
     private var minTierDropDownButton: UIButton = {
@@ -80,16 +80,16 @@ class AddRoomViewController: UIViewController {
     }()
     
     private lazy var roomDescriptionTextField : UITextField = {
-        let tf = UITextField()
-        tf.layer.borderColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
-        tf.layer.borderWidth = 2
-        tf.layer.cornerRadius = 8
-        tf.placeholder = " 주소를 복사하세요"
-        tf.backgroundColor = .white
-        tf.autocorrectionType = .no
-        tf.autocapitalizationType = .none
-        tf.addTarget(self, action: #selector(textFieldEditingChanged(_:)), for: .editingChanged)
-        return tf
+        let $0 = UITextField()
+        $0.layer.borderColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        $0.layer.borderWidth = 2
+        $0.layer.cornerRadius = 8
+        $0.placeholder = " 주소를 복사하세요"
+        $0.backgroundColor = .white
+        $0.autocorrectionType = .no
+        $0.autocapitalizationType = .none
+        $0.addTarget(self, action: #selector(textFieldEditingChanged(_:)), for: .editingChanged)
+        return $0
     }()
     
     private let roomAddButton : UIButton = {
