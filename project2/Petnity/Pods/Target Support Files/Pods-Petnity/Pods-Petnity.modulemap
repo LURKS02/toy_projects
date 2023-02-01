@@ -1,0 +1,6 @@
+framework module Pods_Petnity {
+  umbrella header "Pods-Petnity-umbrella.h"
+
+  export *
+  module * { export * }
+}
