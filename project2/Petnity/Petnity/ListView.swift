@@ -27,17 +27,33 @@ struct ListView: View {
     
     var body: some View {
         
-        List(data) { card in
-            CardView(
-                image: card.image,
-                title: card.title,
-                location: card.location,
-                name: card.name,
-                age: card.age,
-                des: card.des)
-            .listRowSeparator(.hidden)
+        ZStack(alignment: .bottomTrailing) {
+            List(data) { card in
+                CardView(
+                    image: card.image,
+                    title: card.title,
+                    location: card.location,
+                    name: card.name,
+                    age: card.age,
+                    des: card.des)
+                .listRowSeparator(.hidden)
+            }
+            .scrollContentBackground(.hidden)
+            
+            NavigationLink(destination: NewPostView(), label: {
+                ZStack {
+                    Ellipse()
+                        .fill(Color.white)
+                        .frame(width: 64, height: 64)
+                        .shadow(radius: 4)
+                    
+                    Image(systemName: "plus")
+                        .resizable()
+                        .frame(width: 35, height: 35)
+                        .foregroundColor(Color(red: 0.50, green: 0.50, blue: 0.50, opacity: 0.50))
+                }.padding()}
+                           )
         }
-        .scrollContentBackground(.hidden)
     }
 }
 
