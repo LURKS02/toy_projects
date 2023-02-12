@@ -145,8 +145,8 @@ struct ShopView: View {
             
             Spacer()
             Text(tag)
-                .padding(.vertical, 5)
-                .padding(.horizontal, 10)
+                .padding(.vertical, 8)
+                .padding(.horizontal, 12)
                 .font(.footnote)
                 .foregroundColor(.black)
                 .background(.white)
