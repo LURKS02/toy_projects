@@ -19,7 +19,7 @@ struct TabHomeView: View {
                 }
                 .tag(1)
             
-            ListView()
+            BoardView()
                 .tabItem {
                     Image(systemName: "person")
                 }

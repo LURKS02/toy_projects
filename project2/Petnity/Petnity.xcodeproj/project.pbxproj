@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D91668AA2998E64400A9F4C1 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91668A92998E64400A9F4C1 /* BoardView.swift */; };
+		D91668AC2998F0B500A9F4C1 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91668AB2998F0B500A9F4C1 /* PostView.swift */; };
 		D92ECD8C2973AF3B00789C75 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92ECD8B2973AF3B00789C75 /* MainView.swift */; };
 		D92ECD8E2973E2B500789C75 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92ECD8D2973E2B500789C75 /* LoginView.swift */; };
 		D92ECD902977F42900789C75 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92ECD8F2977F42900789C75 /* ListView.swift */; };
@@ -108,6 +110,8 @@
 		93BBB960EA6E033E3260603C /* Pods_Petnity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Petnity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7D76E98570779D91D54E8C /* Pods-Petnity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Petnity.release.xcconfig"; path = "Target Support Files/Pods-Petnity/Pods-Petnity.release.xcconfig"; sourceTree = "<group>"; };
 		C7144A1F801FE4980D698707 /* Pods-Petnity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Petnity.debug.xcconfig"; path = "Target Support Files/Pods-Petnity/Pods-Petnity.debug.xcconfig"; sourceTree = "<group>"; };
+		D91668A92998E64400A9F4C1 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		D91668AB2998F0B500A9F4C1 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		D92ECD8B2973AF3B00789C75 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D92ECD8D2973E2B500789C75 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D92ECD8F2977F42900789C75 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -271,7 +275,9 @@
 			isa = PBXGroup;
 			children = (
 				D95D4E16297E61C500D557EB /* Info.plist */,
+				D91668AB2998F0B500A9F4C1 /* PostView.swift */,
 				D938216F296A344900204430 /* LearningAppApp.swift */,
+				D91668A92998E64400A9F4C1 /* BoardView.swift */,
 				D9382171296A344900204430 /* ContentView.swift */,
 				D954A384296CF9E000772443 /* SignInView.swift */,
 				D92ECD8D2973E2B500789C75 /* LoginView.swift */,
@@ -561,6 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91668AA2998E64400A9F4C1 /* BoardView.swift in Sources */,
 				D92ECD8E2973E2B500789C75 /* LoginView.swift in Sources */,
 				D9382172296A344900204430 /* ContentView.swift in Sources */,
 				D95D4EA8297ED5E400D557EB /* KAKAOView.swift in Sources */,
@@ -570,6 +577,7 @@
 				D954A385296CF9E000772443 /* SignInView.swift in Sources */,
 				D92ECD8C2973AF3B00789C75 /* MainView.swift in Sources */,
 				D92ECD962977F54A00789C75 /* MapView.swift in Sources */,
+				D91668AC2998F0B500A9F4C1 /* PostView.swift in Sources */,
 				D92ECD942977F51C00789C75 /* TabHomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
