@@ -56,8 +56,6 @@ struct NewPostView: View {
                 
                 Spacer()
                 
-                /*Button(action: <#T##() -> Void#>, label: Image(systemName: <#T##String#>))
-                 */
                                               
             }
             .padding(.vertical, 10)
